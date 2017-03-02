@@ -36,7 +36,11 @@
     <%= f.text_field :genre_id, :class => 'form-control' %>
   </div>
 </div>
-
+<div class="form-group">
+  <div>
+  <%= collection_select(:song) %>
+  </div>
+</div>
 <div class="actions">
   <%= f.submit "Crear cancion",:class => "btn btn-default" %>
 </div>
